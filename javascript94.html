@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">WELCOME TO MY WEBPAGES</h1>
+    <script>
+        function fun()
+        {
+        let element=document.getElementById("demo");
+        let r=Math.trunc(Math.random()*256);
+        let g=Math.trunc(Math.random()*256);
+        let b=Math.trunc(Math.random()*256);
+
+        element.style.color="rgb("+r+","+g+","+b+")";
+    }
+    window.setInterval("fun()",500);
+    </script>
+</body>
+</html>

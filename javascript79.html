@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="demo">
+    <h1 id="test">WELCOME</h1>
+    
+    <script>
+        let i=0;
+        let j=1;
+        function fun()
+        {
+            let colors=["yellow","pink","aqua","red","blue","orange"];
+            let element1=document.getElementById("demo");
+            let element2=document.getElementById("test");
+            element2.style.fontSize=j;
+            j+=1;
+            element1.style.backgroundColor=colors[i];
+            i++;
+
+            if(i==6)
+              i=0;
+
+        }
+        setInterval("fun()",1000);
+    </script>
+
+</body>
+</html>

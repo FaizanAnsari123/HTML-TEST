@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body bgcolor="aqua" text="blue">
+   
+    <h1 title="this is 1st level">Naresh i technologies</h1>
+    <h2>Naresh i technologies</h2>
+    <h3 align="center">Naresh i technologies</h3>
+    <h4 align="center">Naresh i technologies</h4>
+    <h5 align="right">Naresh i technologies</h5>
+    <h6 align="right">Naresh i technologies</h6>
+</body>
+</html>

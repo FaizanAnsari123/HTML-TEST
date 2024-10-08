@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let re1=/afm/;
+        document.write(re1.test("hello"));
+
+        let re2=new RegExp("[^afm]");
+        document.write(re1.test("hello"));
+
+        let re3=/^he..o$/
+        document.write(re3.test("hello"));
+
+        let re4=new RegExp("l{2}");
+        document.write(re4.test("hello"));
+    </script>
+</body>
+</html>

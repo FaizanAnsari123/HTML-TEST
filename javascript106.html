@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class student
+    {
+            rollNo=101;
+            name="AA"
+            address="xyz";
+            landlineNo=99999999;
+
+            display()
+            {
+                document.write(this.rollNo,this.name,this.address,this.landlineNo);
+            }
+        }
+       
+    class student1 extends student
+    {
+        mailId= "abc@123";
+        mobileNo=1234567890;
+
+        display()
+        {
+            document.write(this.rollNo,this.name,this.mailId,this.mobileNo);
+        }
+    }
+
+  
+    let e1= new student();
+    e1.display();
+    let e2=new student();
+    e2.display();
+   </script> 
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: arial;
+    
+}
+body{
+    background-image: url(images/mountain\ \(2\).jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    
+
+
+}
+.menu{
+    background:#234F1E;
+    text-align: center;
+}
+.menu ul{
+    display:inline-flex;
+    list-style: none;
+    color:whitesmoke;
+}
+.menu ul li{
+    width:120px;
+    margin:10px;
+    padding:15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+}
+.active, .menu ul li :hover
+{
+    background:#2bab0d;
+    border-radius:4px;
+    width: 100%;
+    transition-property:width;
+    transition-duration:5s ;
+
+}
+.menu .fa
+{
+margin-right: 4px;
+}
+.about{
+    display:none;
+}
+menu ul li :hover .about{
+    display:none;
+    position: absolute;
+    background:#2bab0d;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+menu ul li :hover .about ul{
+    display:block;
+    margin:10px
+}
+menu ul li :hover .about ul li{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px solid white;
+    background: transparent;
+}

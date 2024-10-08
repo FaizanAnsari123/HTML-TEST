@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Happy New Year 2024</h1>
+    <script>
+        let x=1;
+        function fun()
+        {
+            let element=document.getElementById("demo");
+           
+            if(x==1)
+            {
+                element.style.color="yellow";
+                
+                x++;
+            }
+            else if(x==2)
+            {
+                element.style.color="aqua";
+                x++;
+            }
+           
+            else
+            {
+                element.style.color="blue";
+                x=1;
+            }
+        }
+        window.setInterval("fun()",2000);
+    </script>
+</body>
+</html>

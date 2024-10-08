@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student
+        {
+            constructor(rollNo,name,marks)
+            {
+                this.rollNo=rollNo;
+                this.name=name;
+                this.marks=marks;
+            }
+
+            static instituteName="instituteName";
+            display()
+            {
+               document.write(this.rollNo,this.name,this.marks,student.instituteName);
+            
+            }
+        }   
+        let e1=new student(101,'AA',90);
+        let e2=new student(101,'BB',99);
+        e1.display();
+        e2.display();
+
+    </script>
+</body>
+</html>

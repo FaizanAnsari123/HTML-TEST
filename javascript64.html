@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"> WELCOME TO MY WEB PAGES</h1>
+    <input type="button" value="style" onmouseup="fun1()" onmousedown="fun2()">
+    
+    <script>
+        let element=document.getElementById("demo")
+
+        function fun1()
+        {
+            element.style.color="red";
+            element.style.backgroundColor="yellow";
+            element.style.borderStyle="solid";
+            element.style.borderWidth="5 px";
+        }
+        function fun2()
+        {
+            element.style.color="blue";
+            element.style.backgroundColor="aqua";
+            element.style.borderStyle="double";
+            element.style.borderWidth="5px";
+        }
+
+    </script>
+
+</body>
+</html>

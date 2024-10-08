@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let student={
+        rollno:102,
+        name:"AA"
+    }
+    document.write(student.rollno + "<br>" + student.name + "<br>");
+    student.marks=80;
+    document.write(student.rollno + "<br>" + student.name + "<br>" + student.marks + "<br>");
+    delete student.name;
+    document.write(student.rollno + "<br>" + student.name + "<br>" + student.marks);
+  </script>  
+</body>
+</html>

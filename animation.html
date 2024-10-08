@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background:silver;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        img{
+            height:250px;
+            width: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 7px solid silver;
+
+        }
+        .test img{
+
+            height: 250;
+            width: 400;
+            filter: grayscale(100%);
+            transition: 0.5s ease-in;
+            cursor:pointer;
+        }
+        .test img :hover{
+            transform: scale(1.2);
+            filter:drop-shadow(0);
+            zoom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+    <img src="images/sitting boys and girls.jpg" alt="car">
+    </div>
+</body>
+</html>

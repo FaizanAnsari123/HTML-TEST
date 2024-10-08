@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function emp(empno,ename,esalary)
+        {
+            this.empno=empno;
+            this.ename=ename;
+            this.esalary=esalary;
+        }
+        let e1=new emp(1001,'RAJ',5000.00);
+        let e2=new emp(1002,'ROHIT',5555.00);
+
+        document.write(e1.empno,e1.ename,e1.esalary ,"<br>");
+        document.write(e2.empno,e2.ename,e2.esalary);
+    </script>
+</body>
+</html>

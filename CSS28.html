@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type]{
+            background-color: aqua;
+        }
+        input[type="password"]{
+            background-color: yellow;
+        }
+        input[id~="second"]{
+            background-color: pink;
+        }
+        input[id|="second"]{
+            background-color: blueviolet;
+        }
+        input[id^=demo]{
+            color: red;
+        }
+        input[id$=second]{
+            background-color: grey;
+        }
+        input[id*="test"]
+        {
+            background-color: green;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <center>
+    <h1><u>Login form</u></h1>
+    <form action="">
+        username <input type="text" name="uname" id="demo"> <br>
+        password <input type="password" name="pword" id="first demo"> <br>
+        e-mail <input type="email" name="mail" id="demo-test"> <br><br>
+        <input type="submit" id="first demo second"><input type="reset" id="second-demo-test"> 
+    </form>
+    </center>
+</body>
+</html>
