@@ -35,7 +35,25 @@ const winPattern=[
     msg.innerText="" ; // clear the winner message
  }
 newGames.addEventListener('click',resetGame)
+ 
+const checkDraw=()=>{
+    // check if all cells are filled
+    let isDraw=true ;
+    boxes.forEach(box=>{
+        if(box.innerText===''){
+            isDraw=false ;   // if any cell is still empty its not draw
+        }
+    });
+    if(isDraw){
+        displayDraw(); 
+    }
+};
+const displayDraw=()=>{
+    msg.innerText="It's a draw" ;
+    msgContainer.classList.remove("hide");
+    disbtn();
 
+}
 
 boxes.forEach(box=>{
    box.addEventListener("click" ,()=>{
@@ -53,6 +71,7 @@ boxes.forEach(box=>{
     box.disabled=true;
     
    checkWinner();
+   checkDraw();
    });
 
 });
@@ -91,6 +110,7 @@ const checkWinner=()=>{
                     console.log("Winner",posVal1);
                    
                     showWinner(posVal1);
+                   
                 }
             } 
     }
