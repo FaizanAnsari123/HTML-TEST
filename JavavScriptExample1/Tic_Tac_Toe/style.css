@@ -94,7 +94,7 @@ span{
 }
 p{
     color: rgb(208, 196, 241);  
-    font-size: 6vmin;
+    font-size: 2rem;
 }
 .hide{
    display: none;
